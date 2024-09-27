@@ -1,34 +1,130 @@
-* {
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  
 }
 
-html,
-body {
-  height: 100%;
-}
-
-.main-container {
-  min-height: calc(100vh - 50px); /* Subtract the footer height */
-  padding: 20px;
-  height: 100%;
-  width: 100%;
-}
-
-/* Footer styling */
-footer {
-  height: 50px;
-  background-color: #333;
-  color: white;
-  text-align: center;
+.header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  position: relative; /* Normal flow in the document */
+  background-color: #fafafa;
+  overflow: hidden;
 }
 
-img {
-  height: 100px;
-  width: auto;
+.logo {
+  font-size: 24px;
+  font-family: "Roboto Mono", monospace;
+  margin-left: 20px;
+}
+
+
+
+nav {
+  margin-right: 20px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  word-spacing: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+}
+
+nav a:hover {
+  background-color: #c4c2c2;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+}
+
+.active {
+  background-color: #c4c2c2;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#contact-button {
+  background-color: #000000 !important; 
+  color: #fafafa !important;
+}
+
+.hero-page {
+  background-image: url("/img/Hero\ page\ background.png");
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+#get-in-touch {
+  background-color: #3f51f2;
+  border-radius: 30px;
+  width: 260px;
+  height: 65px;
+  border: none;
+  font-family: "Roboto Mono", monospace;
+  font-size: 32px;
+  color: #fafafa;
+}
+
+#about-us {
+  background-color: #fafafa;
+  border-radius: 30px;
+  width: 260px;
+  height: 65px;
+  border: none;
+  font-family: "Roboto Mono", monospace;
+  font-size: 32px;
+  color: #3f51f2;
+}
+
+.hero-container,
+section button {
+  position: relative;
+  left: 96px;
+}
+
+.hero-container h1 {
+  width: 779px;
+  height: 247px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: "Roboto Mono";
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 98px; /* 76.563% */
+  margin-bottom: 10px;
+  margin-top: 25vh;
+}
+
+.hero-container p {
+  width: 644px;
+  height: 74px;
+  flex-shrink: 0;
+  color: #fff;
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: #000;
+  font-family: "Roboto Mono";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 36px */
+  margin-top: 10px;
+}
+
+span {
+  color: #3f51f2;
+  font-family: "Roboto Mono";
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 98px;
 }
