@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/pricing.css" />
+    <meta charset="UTF-8">
+    <meta name="author" content="Rashid Ismayilzada">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pricing.css">
+    <link rel="stylesheet" href="css/general.css">
     <title>Prices</title>
   </head>
   <body>
     <!-- Pricing section -->
     <section class="main-section">
+      <h2 class="visually-hidden">Main Section</h2>
+
       <!-- Navigation -->
       <header class="header">
         <aside class="logo">
@@ -17,63 +21,64 @@
               src="img/loom-rise-favicon-v2.svg"
               alt="LoomRise Logo"
               class="logo-image"
-            />
+            >
           </a>
         </aside>
-
         <nav class="top-nav">
           <ul>
-            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="home.html">Home</a></li>
             <li><a href="services.html">Service</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="pricing.html" class="active">Pricing</a></li>
             <li><a href="case-studies.html">Case Studies</a></li>
             <li><a href="testimonials.html">Testimonials</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </header>
 
-      <section>
-        <figure>
-          <img src="img/transparent.png" alt="transparent" />
-        </figure>
+      <section class="pricing">
+        <h2 class="visually-hidden">Pricing Packages</h2>
+        
         <article>
-          <h1>Basic:</h1>
-          <p>
+          <h3>Basic</h3>
+          <p class="main-details">
             Our Basic package includes essential services such as social media
             account management and basic content creation. Ideal for businesses
             starting to build their social media presence.
           </p>
+          <p class="extra-details">
+            Includes: 3 social media accounts, 10 posts per month, basic analytics, and monthly performance reports.
+          </p>
+          <a href="contact.html">Contact us</a>
         </article>
-      </section>
 
-      <section>
-        <figure>
-          <img src="img/transparent.png" alt="transparent" />
-        </figure>
         <article>
-          <h1>Standard:</h1>
-          <p>
+          <h3>Standard</h3>
+          <p class="main-details">
             The Standard package offers a more comprehensive approach with
             additional services like advanced analytics and ad management.
             Perfect for businesses looking to expand their social media efforts.
           </p>
-        </article>
-      </section>
 
-      <section>
-        <figure>
-          <img src="img/transparent.png" alt="transparent" />
-        </figure>
+          <p class="extra-details">
+            Includes: 5 social media accounts, 20 posts per month, advanced analytics, and 1 ad campaign per month.
+          </p>
+          <a href="contact.html">Contact us</a>
+        </article>
 
         <article>
-          <h1>Premium:</h1>
-          <p>
+          <h3>Premium</h3>
+          <p class="main-details">
             Our Premium package provides an all-inclusive social media marketing
             solution with full-scale management, content creation, and detailed
             reporting. Best for businesses seeking a complete social media
             overhaul.
           </p>
+
+          <p class="extra-details">
+            Includes: Unlimited social media accounts, unlimited posts, content creation, multiple ad campaigns, and detailed monthly reports.
+          </p>
+          <a href="contact.html">Contact us</a>
         </article>
       </section>
     </section>
@@ -82,20 +87,16 @@
     <footer>
       <nav class="footer-navigation">
         <a href="home.html">Home</a>
-        <hr />
         <a href="services.html">Service</a>
-        <hr />
         <a href="pricing.html">Pricing</a>
-        <hr />
-        <a href="case-studies.html">CaseStudies</a>
-        <hr />
+        <a href="case-studies.html">Case Studies</a>
         <a href="testimonials.html">Testimonials</a>
-        <hr />
-        <a href="#">Contact</a>
+        <a href="contact.html">Contact</a>
       </nav>
 
       <article>
-        <p>&copy Loom Rise 2024. All rights reserved.</p>
+        <h3 class="visually-hidden">Footer Information</h3>
+        <p>&copy; Loom Rise 2024. All rights reserved.</p>
       </article>
     </footer>
   </body>
