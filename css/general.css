@@ -213,3 +213,51 @@ footer {
     font-size: 16px;
   }
 }
+
+a:link {
+  color: red;
+}
+
+#cookie-message {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  z-index: 9999;
+}
+
+#cookie-message p {
+  margin: 0;
+  padding: 0.5em 0;
+}
+
+#cookie-message button {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  margin: 0 0.5em;
+  cursor: pointer;
+}
+
+#cookie-message button:hover {
+  background-color: #777;
+}
+
+
+/* Hide the buttons by default */
+.accept-button,
+.decline-button {
+    display: none;
+}
+
+/* Use the checkbox to control the visibility */
+#toggle-cookie-buttons:checked ~ .accept-button,
+#toggle-cookie-buttons:checked ~ .decline-button {
+    display: inline-block;
+}
+

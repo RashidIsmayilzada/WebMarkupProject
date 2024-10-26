@@ -1,5 +1,5 @@
 body {
-  background-color: #2F2F2F;
+  background: linear-gradient(to left, #0D0060, #000000);
 }
 
 .main-section {
@@ -22,8 +22,10 @@ body {
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  border: 2px solid white;
+  border-width: 2px;
+  border-color: white;
   border-radius: 40px;
+  border-style: dashed;
   height: 710px;
   width: 351px;
   min-height: 710px;
