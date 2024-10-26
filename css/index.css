@@ -8,7 +8,7 @@ body {
 }
 
 .hero-page {
-  background-image: url("/img/why-loom-rise.png");
+  background-image: url("../img/why-loom-rise.png");
   min-height: 100vh;
   background-position: center;
   background-size: cover;
@@ -236,7 +236,7 @@ body {
 }
 
 .why-loom-rise {
-  background-image: url(/img/Why\ Loom\ Rise.png);
+  background-image: url(../img/why-loom-rise.png);
   min-height: 100vh;
   background-position: center;
   overflow: hidden;
