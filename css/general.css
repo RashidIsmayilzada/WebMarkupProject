@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+}
+
+/* Font size for tablets */
+@media (max-width: 1200px) {
+  p {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+}
+
+/* Font size for mobile devices */
+@media (max-width: 768px) {
+  p {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafafa;
+  overflow: hidden;
+}
+
+.logo-image {
+  width: 38px;
+  height: auto;
+  margin-left: 20px;
+}
+
+.top-nav {
+  margin-right: 20px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  display: flex; /* Add this to make the nav items horizontal */
+  gap: 50px; /* Adds spacing between the list items */
+}
+
+.top-nav li {
+  display: inline;
+  list-style-type: none;
+  gap: 20px;
+}
+
+.top-nav ul {
+  display: flex;
+  gap: 25px;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+}
+
+.top-nav a:hover {
+  background-color: #c4c2c2;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+}
+
+.active {
+  background-color: #c4c2c2;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+  display: none; /* Hide the hamburger by default */
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .top-nav {
+    display: none; /* Hide the navigation menu on small screens */
+  }
+
+  .hamburger {
+    display: block; /* Show the hamburger button on small screens */
+  }
+
+  .top-nav.show {
+    display: flex; /* Show the navigation menu when the hamburger is clicked */
+    flex-direction: column; /* Stack the items vertically */
+    position: absolute;
+    top: 60px; /* Adjust based on your header height */
+    right: 0;
+    background-color: #fafafa; /* Match the header background */
+    width: 100%; /* Full width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    z-index: 1; /* Make sure it appears above other content */
+  }
+
+  .top-nav ul {
+    flex-direction: column; /* Stack items vertically */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+
+  .top-nav li {
+    margin: 10px 0; /* Add some space between the items */
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  background-color: #fafafa;
+}
+
+.footer-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 35px;
+}
+
+.footer-navigation a {
+  text-decoration: none;
+  color: #000000;
+  padding: 5px 10px;
+}
+
+.footer-navigation a:hover {
+  color: #3f51f2;
+}
+
+@media (max-width: 768px) {
+  .footer-navigation {
+    flex-direction: column;
+    gap: 10px;
+  }
+  article {
+    font-size: 16px;
+  }
+}
+
+a:link {
+  color: red;
+}
+
+#cookie-message {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  z-index: 9999;
+}
+
+#cookie-message p {
+  margin: 0;
+  padding: 0.5em 0;
+}
+
+#cookie-message button {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  margin: 0 0.5em;
+  cursor: pointer;
+}
+
+#cookie-message button:hover {
+  background-color: #777;
+}
+
+
+/* Hide the buttons by default */
+.accept-button,
+.decline-button {
+    display: none;
+}
+
+/* Use the checkbox to control the visibility */
+#toggle-cookie-buttons:checked ~ .accept-button,
+#toggle-cookie-buttons:checked ~ .decline-button {
+    display: inline-block;
+}
+

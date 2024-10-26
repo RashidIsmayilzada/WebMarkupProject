@@ -1,0 +1,114 @@
+body {
+  background: linear-gradient(to bottom, #0D0060, #1E1747, #000000);
+}
+
+/* First Page */
+figure img{
+  width: 595px;
+  height: 400px;
+  min-width: 595px;
+  min-height: 400px;
+  object-fit: cover;
+  border-radius: 40px;
+  border: 4px solid blue;
+}
+
+.our-services {
+  min-height: 100vh;
+}
+
+.our-services article {
+  color: white;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 200px;
+}
+
+.our-services article h2 {
+  margin: 0;
+  font-size: 100px;
+}
+
+.our-services article p {
+  font-size: 40px;
+}
+
+/* Page 2 */
+.service-description {
+  color: white;
+}
+
+.service-description figure{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 100px 200px 100px 100px;
+  margin: 0;
+}
+
+.reversed {
+  flex-direction: row-reverse;
+}
+
+.service-description figure h2 {
+  font-size: 36px;
+}
+
+.service-description figure p {
+  font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+  .service-description figure img {
+    border: 3px solid blue;
+  }
+
+  .service-description figure{
+    flex-direction: column;
+    padding: 50px;
+    text-align: justify;
+  }
+  
+  .reversed {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 768px) {
+  .our-services{
+    min-height: 40vh;
+  }
+
+  figure img {
+    width: 258px;
+    height: 173px;
+    min-width: 258px;
+    min-height: 173px;
+    border: 2px solid blue;
+  }
+
+  .service-description figure h2 {
+    font-size: 24px;
+  }
+  
+  .service-description figure p {
+    font-size: 16px;
+  }
+
+  .our-services article h2 {
+    margin: 0;
+    font-size: 40px;
+  }
+  
+  .our-services article p {
+    font-size: 20px;
+  }
+  
+  .our-services article {
+    padding: 25px;
+    
+  }
+}

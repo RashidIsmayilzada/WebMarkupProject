@@ -1,11 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/general.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <meta name="author" content="Rashid Ismayilzada">
+    <meta name="description" content="LoomRise helps businesses grow through expert social media marketing and tailored strategies for brand visibility.">
+    <meta name="keywords" content="LoomRise, Social Media Marketing, Business Growth, Digital Marketing, Brand Visibility">
+    <link rel="shortcut icon" href="img/loom-rise-favicon-v2.svg" type="image/x-icon">
+    <title>LoomRise</title>
+  </head>
+  <body>
+    <!-- Home Page -->
+    <section class="hero-page">
+      <h2 class="visually-hidden">Hero Section</h2>
+      <!-- Navigation -->
+      <header class="header">
+        <aside class="logo">
+          <a href="index.html">
+            <img src="img/loom-rise-favicon-v2.svg" alt="LoomRise Logo" class="logo-image" title="LoomRise Logo">
+          </a>
+        </aside>
+
+        <nav class="top-nav">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="services.html">Service</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="hero-container">
+        <h2>Welcome to <br> <span id="hero-page">LoomRise</span></h2>
+        <p>Transform your business with Expert Social Media Marketing</p>
+        <a href="contact.html" id="get-in-touch" role="button">Get In Touch</a>
+      </section>
+    </section>
+
+    <!-- Who Are We Section with Video Background -->
+    <section class="who-are-we">
+      <h2>Who are we?</h2>
+      <video autoplay muted loop class="background-video" title="Background video for LoomRise">
+        <source src="video/coding_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <article class="who-content">
+        <h3 class="visually-hidden">Who content</h3>
+        <p><span id="who-we-are">LoomRise</span> is dedicated to helping businesses like yours grow through strategic social media marketing. With a passion for results and a team of seasoned professionals, we craft tailored strategies that drive engagement and boost brand visibility.</p>
+      </article>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="service-overview">
+      <h2 class="visually-hidden">Service Overview</h2>
+      <article class="offers">
+        <h3>What We Offer:</h3>
+        <p>Explore the range of services we offer to help your business thrive in the digital world. Our tailored solutions are designed to meet your specific needs and drive meaningful results.</p>
+      </article>
+      <section class="service-container">
+        <h2>social media</h2>
+        <h2>content creation</h2>
+        <h2>social media advertising</h2>
+        <h2>analytics and reporting</h2>
+      </section>
+    </section>
+
+    <!-- Why LoomRise Section -->
+    <section class="why-loom-rise">
+      <h2 class="visually-hidden">Why Choose Loom Rise</h2>
+      <article>
+        <h3>Why LoomRise?</h3>
+        <p>Choose us for our commitment to excellence and client success. Our experienced team offers personalized strategies, a proven track record of results, and a dedication to understanding and achieving your business objectives.</p>
+      </article>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <nav class="footer-navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Service</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p>&copy; LoomRise 2024. All rights reserved.</p>
+    </footer>
+
+    <section id="cookie-message" role="dialog" aria-label="Cookie consent message">
+      <h1 class="visually-hidden">Cookies</h1>
+      <p>We use cookies to improve your experience on our site.</p>
+      <button type="button" id="accept-btn">Accept</button>
+      <button type="button" id="decline-btn">Decline</button>
+    </section>
     
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
