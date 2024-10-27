@@ -1,0 +1,5 @@
+Student name: Rashid Ismayilzada
+Student number: 728313
+Student class: IT1B
+GitHub Repository: https://github.com/RashidIsmayilzada/WebMarkupProject
+GitHub Pages URL: https://rashidismayilzada.github.io/WebMarkupProject/contact.html
