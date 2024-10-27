@@ -58,11 +58,13 @@ body {
   border: 1px solid white;
   border-radius: 40px;
   padding: 8px 15px;
+  transition: all;
   -webkit-transition: all 0.3s ease;
 }
 
 .pricing article a:hover {
   background-color: blue;
+  transition: all;
   -webkit-transition: all 0.3s ease;
 }
 
