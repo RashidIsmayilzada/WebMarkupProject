@@ -49,7 +49,6 @@ p {
   font-size: 16px;
 }
 
-/* Font size for tablets */
 @media (max-width: 1200px) {
   p {
     font-size: 15px;
@@ -64,7 +63,6 @@ p {
   }
 }
 
-/* Font size for mobile devices */
 @media (max-width: 768px) {
   p {
     font-size: 14px;
@@ -97,8 +95,8 @@ p {
   margin-right: 20px;
   font-family: "Roboto Mono", monospace;
   font-size: 16px;
-  display: flex; /* Add this to make the nav items horizontal */
-  gap: 50px; /* Adds spacing between the list items */
+  display: flex;
+  gap: 50px;
 }
 
 .top-nav li {
@@ -130,15 +128,6 @@ p {
   color: white;
   border-radius: 10px;
   padding: 10px;
-}
-
-/* Hamburger Menu Styles */
-.hamburger {
-  display: none; /* Hide the hamburger by default */
-  font-size: 30px;
-  background: none;
-  border: none;
-  cursor: pointer;
 }
 
 footer {
@@ -212,14 +201,11 @@ a:link {
   background-color: #777;
 }
 
-
-/* Hide the buttons by default */
 .accept-button,
 .decline-button {
     display: none;
 }
 
-/* Use the checkbox to control the visibility */
 #toggle-cookie-buttons:checked ~ .accept-button,
 #toggle-cookie-buttons:checked ~ .decline-button {
     display: inline-block;
@@ -447,7 +433,7 @@ input[type="submit"]:hover {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  min-height: 100vh; /* This ensures the section takes up full viewport height */
+  min-height: 100vh;
   flex-direction: column;
   padding-left: 80px;
 }
@@ -458,7 +444,7 @@ input[type="submit"]:hover {
   font-size: 128px;
   font-style: normal;
   font-weight: 700;
-  line-height: 98px; /* 76.563% */
+  line-height: 98px;
   margin: 0;
   word-spacing: 10px;
 }
@@ -473,7 +459,7 @@ input[type="submit"]:hover {
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
-  line-height: 100%; /* 36px */
+  line-height: 100%;
 }
 
 #hero-page {
@@ -486,11 +472,11 @@ input[type="submit"]:hover {
 
 @media (max-width: 1390px) {
   .hero-container {
-    padding-left: 40px; /* Reduce padding for smaller screens */
+    padding-left: 40px;
   }
 
   .hero-container h1 {
-    font-size: 64px; /* Adjust for readability */
+    font-size: 64px;
     line-height: 80px;
   }
 
@@ -501,8 +487,8 @@ input[type="submit"]:hover {
 
   .hero-container p {
     font-size: 28px;
-    max-width: 90%; /* Allow text to flow better on narrow screens */
-    margin: 10px 0; /* Less margin on smaller screens */
+    max-width: 90%;
+    margin: 10px 0;
   }
 }
 
