@@ -179,7 +179,7 @@ footer {
 }
 
 a:link {
-  color: red;
+  color:  black;
 }
 
 #cookie-message {
@@ -928,6 +928,13 @@ input[type="submit"]:hover {
   }
 }
 
+table tr:nth-child(odd) {
+  background-color: #FFF;
+}
+
+table tr:nth-child(even) {
+  background-color: #CFF;
+}
 
 /* Testimonials page */
 section.testimonial {
