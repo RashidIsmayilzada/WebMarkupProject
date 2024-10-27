@@ -1,6 +1,6 @@
 /* Section: Case Studies */
 .case-studies {
-  background-image: url("/img/chess.jpeg"); /* Adjust the image path */
+  background-image: url("../img/chess.jpeg"); /* Adjust the image path */
   background-size: cover;
   background-position: center;
   color: #ffffff;
